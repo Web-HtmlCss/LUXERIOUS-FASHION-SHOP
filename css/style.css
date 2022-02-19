@@ -17,7 +17,7 @@ body {
     display: none;
 }
 
-.header {
+header {
     background-color: #222222;
     height: 75px;
 }
