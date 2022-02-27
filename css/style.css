@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
 * {
     margin: 0;
@@ -26,7 +26,7 @@ header {
     overflow: hidden;
     align-items: center;
     margin: 0 auto;
-    max-width: 1124px;
+    max-width: 1140px;
 }
 .left-head {
     float: left;
@@ -34,6 +34,7 @@ header {
 .right-head {
     text-align: right;
 }
+
 .menu-img {
     padding: 0 18px;
 }
@@ -105,6 +106,7 @@ header {
         font-size: 38px;
     }
 }
+
 @media (min-width: 768px) and (max-width: 1599px) {
     .brand-txt {
         font-size: 24px;
@@ -112,8 +114,8 @@ header {
     .brand-top {
         font-size: 44px;
     }
-    
 }
+
 @media (min-width: 1600px){
     .brand-txt {
         margin-right: 200px;
@@ -169,6 +171,7 @@ header {
         page-break-inside: avoid;
     }
 }
+
 @media (max-width: 900px) {
     .menu-panel {
         width: 375px;
@@ -189,12 +192,12 @@ header {
         padding-right: 3px;
     }
 }
+
 @media (max-width: 375px) {
     .menu-panel {
         width: 100%;
     }
 }   
-
 
 .offers {
     display: grid;
@@ -226,13 +229,15 @@ header {
         grid-template-columns: 1fr;
         grid-template-rows: 247px 247px 247px 111px;
         gap: 32px;
-        padding: 64px 16px;
+        /*дефект макета: отступ 16px->8px*/
+        padding: 64px 8px;
     }
     .offer-accesories img {
         height: 111px;
     }
 }
-@media (min-width: 768px) and (max-width: 1123px) {
+
+@media (min-width: 768px) and (max-width: 1140px) {
     .offers {
         grid-template-rows: 167px 116px;
         padding: 20px 16px 154px;
@@ -261,8 +266,9 @@ header {
 }
 
 .fetured {
-   max-width: 1124px;
-   margin: 0 auto;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 16px
 }
 .fetured-title {
     text-align: center;
@@ -356,33 +362,33 @@ header {
     display: flex;
 }
 
-@media (min-width: 768px) and (max-width: 1123px) {
-    .fetured-description {
-        margin: 4px 0 74px;
-    }
-    .fetured-container {
-        grid-template-columns: 1fr 1fr;
-        padding: 0 16px;
-        gap: 16px;
-    }
-    .btn-browse {
-        margin: 33px auto 65px;
-    }
-}
-
 @media (max-width: 767px) {
+    .fetured {
+        padding: 0 8px;
+    }
     .fetured-description {
         margin: 3px 0 64px;
     }
     .fetured-container {
         grid-template-columns: 1fr;
-        padding: 0 8px;
         gap: 16px;
     }
     .btn-browse {
         margin: 41px auto 96px;
     }
+}
 
+@media (min-width: 768px) and (max-width: 1140px) {
+    .fetured-description {
+        margin: 4px 0 74px;
+    }
+    .fetured-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .btn-browse {
+        margin: 33px auto 65px;
+    }
 }
 
 .servises {
@@ -395,27 +401,24 @@ header {
     padding-bottom: 104px;
     margin: 0 auto;
     text-align: center;
-    max-width: 1124px;
+    max-width: 1140px;
 }
 .servise {
     color: #FBFBFB;
     width: 320px;
     margin: 0 auto;
-
 }
 .servise_title {
     font-size: 19.96px;
     margin-top: 23px;
     margin-bottom: 16px;
-
 }
-
 .servise_txt {
     font-weight: 300;
     font-size: 13.972px;
 }
 
-@media (max-width: 1124px) {
+@media (max-width: 1140px) {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -428,26 +431,20 @@ header {
 .subscribe {
     background: url('../img/photoSubscribe.jpg') no-repeat;
     background-size: cover;
-
 }
 .subscribe_container {
     text-align: center;
     padding: 87px 20px 126px;
     color: #222224;
-    max-width: 1124px;
+    max-width: 1140px;
     margin: 0 auto;
     display: flex;
-
-
 }
-
 .subscribe_left ,
 .subscribe_beetwen,
 .subscribe_right {
    width: 33%;
-
 }
-
 .subscribe_txt {
     font-size: 20px;
     line-height: 24px;
@@ -458,7 +455,6 @@ header {
     font-weight: bold;
     font-size: 24px;
     margin-top: 60px;
-
 }
 .subscribe_description {
     font-size: 18px;
@@ -473,7 +469,6 @@ header {
     border: none;
     height: inherit;
     font-family: inherit;
-
 }
 .subscribe_form input {
     background-color: #E1E1E1;
@@ -488,13 +483,17 @@ header {
     background: #F16D7F;
     color: white;
     width: 90px;
+    cursor: pointer;
+}
+.subscribe_form button:hover {
+    background: #E1E1E1;
+    color: #F16D7F;
 }
 
-@media (max-width: 1124px) {
+@media (max-width: 1140px) {
     .subscribe_container {
         flex-direction: column;
         padding: 54px 10px 120px;
-
     }
     .subscribe_left ,
     .subscribe_right {
@@ -509,16 +508,15 @@ header {
     .subscribe_description {
         font-size: 14px;
     }
-    
 }
+
 footer{
     background: #222224;
     height: 80px;
     width: 100%;
 }
-
 .footer_container {
-    max-width: 1124px;
+    max-width: 1140px;
     margin: 0 auto;
     height: 100%;
     position: relative;
@@ -529,7 +527,6 @@ footer{
     line-height: 80px;
     font-size: 16px;
 }
-
 .footer_right {
     color: #FBFBFB;
     line-height: 80px;
@@ -537,7 +534,6 @@ footer{
     right: 20px;
     top: 10px;
 }
- 
 footer a {
     display: inline-block;
     text-decoration: none;
