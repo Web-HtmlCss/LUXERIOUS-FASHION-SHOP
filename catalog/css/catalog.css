@@ -1,0 +1,291 @@
+@import '../../css/style.css';
+@import '../../css/index.css';
+.filters, .title .title_container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1172px) {
+  .filters, .title .title_container {
+    margin: 0 16px;
+  }
+}
+@media (max-width: 767px) {
+  .filters, .title .title_container {
+    margin: 0 8px;
+  }
+}
+
+.catalog {
+  position: relative;
+}
+.catalog .menu-panel {
+  height: initial;
+  z-index: 2;
+}
+
+.title {
+  height: 148px;
+  background: #F8F3F4;
+}
+.title .title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+.title .title_container p {
+  font-weight: normal;
+  font-size: 24px;
+  color: #F16D7F;
+}
+.title .title_container a, .title .title_container span {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  color: #636363;
+}
+.title .title_container a:last-child {
+  color: #F16D7F;
+  font-weight: 700;
+}
+.title .title_container span {
+  margin: 0 2px;
+}
+@media (max-width: 600px) {
+  .title .title_container {
+    flex-direction: column;
+    justify-content: initial;
+  }
+  .title .title_container p {
+    margin: 24px 0 32px;
+  }
+}
+
+.filters {
+  height: 81px;
+}
+.filters .filters_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.filters .filter-left {
+  position: relative;
+}
+.filters .test-anime {
+  visibility: hidden;
+  height: 531px;
+  width: 360px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  perspective: 600px;
+  z-index: 2;
+  transition-duration: 1s;
+}
+.filters .test-anime .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(0deg);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-delay: 0.5s;
+  width: inherit;
+  height: inherit;
+}
+.filters .test-anime .filter-category {
+  transform: rotateY(90deg);
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+.filters .onAnime {
+  visibility: visible !important;
+}
+.filters .onAnime .back {
+  transform: rotateY(-90deg);
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+}
+.filters .onAnime .filter-category {
+  transform: rotateY(0deg);
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+}
+@media (max-width: 1140px) {
+  .filters .test-anime {
+    background: none;
+  }
+  .filters .test-anime .back {
+    display: none;
+  }
+}
+.filters .filter-category {
+  height: 531px;
+  width: 360px;
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  padding-left: 17px;
+  padding-right: 17px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.filters .filter-category .filterActive-fat {
+  margin: 13px 0 16px;
+  cursor: pointer;
+}
+.filters .filter-category .category-head {
+  height: 37px;
+  border-bottom: 1px solid #EBEBEB;
+  line-height: 37px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+.filters .filter-category .category-head:before {
+  content: "";
+  background: #EF5B70;
+  height: 37px;
+  width: 5px;
+  float: left;
+  margin-right: 11px;
+}
+.filters .filter-category .active {
+  color: #EF5B70;
+}
+.filters .filter-category .active + .category-body {
+  display: block;
+}
+.filters .filter-category .category-body {
+  padding: 5px 0 10px;
+}
+.filters .filter-category a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #6F6E6E;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 18px;
+}
+.filters .filter-category a:hover {
+  color: #EF5B70;
+}
+.filters .filter-right .rightFltr {
+  display: inline-block;
+  font-size: 14px;
+  color: #6F6E6E;
+  margin-left: 28px;
+  position: relative;
+  cursor: pointer;
+}
+.filters .filter-right .rightFltr img {
+  margin-left: 10px;
+  position: relative;
+  bottom: 1px;
+}
+.filters .filter-right .rightFltr .fltrsize-body {
+  position: absolute;
+  top: 23px;
+  left: -9px;
+  width: 79px;
+  height: 103px;
+  background: white;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding-top: 5px;
+  z-index: 2;
+  -webkit-animation: anim 2s;
+          animation: anim 2s;
+  overflow: hidden;
+}
+.filters .filter-right .rightFltr .fltrsize-body input {
+  margin: 4px 10px 7px;
+}
+@-webkit-keyframes anim {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 103px;
+  }
+}
+@keyframes anim {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 103px;
+  }
+}
+@media (min-width: 801px) {
+  .filters {
+    height: 134px;
+  }
+  .filters .filter-fat {
+    cursor: pointer;
+    display: block;
+  }
+  .filters .filter-right {
+    margin-left: 304px;
+  }
+  .filters .filters_container {
+    justify-content: flex-start;
+    padding-top: 51px;
+  }
+}
+@media (max-width: 800px) and (min-width: 450px) {
+  .filters .filter-fat {
+    display: block;
+  }
+}
+@media (max-width: 449px) {
+  .filters .filter-slim {
+    display: block;
+    cursor: pointer;
+  }
+  .filters .rightFltr {
+    font-size: 12px !important;
+    margin-left: 13px !important;
+  }
+  .filters .rightFltr img {
+    margin-left: 5px !important;
+  }
+}
+
+@media (max-width: 1141px) {
+  .davay-dasvidania-1140px {
+    display: none;
+  }
+}
+.pagination {
+  width: 283px;
+  height: 43px;
+  border: 1px solid #EBEBEB;
+  border-radius: 4px;
+  margin: 48px auto 97px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  .pagination {
+    margin: 40px auto 64px;
+  }
+}
+.pagination a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 43px;
+  color: #6F6E6E;
+}
+.pagination a:hover {
+  transform: scale(1.5);
+}
+.pagination .active {
+  color: #EF5B70;
+}/*# sourceMappingURL=catalog.css.map */
