@@ -1,0 +1,8 @@
+@import '../../css/fetured.css';
+
+.b-fetured_margin_b {
+    margin-bottom: 128px;
+    @media (max-width: 767px) {
+        margin-bottom: 64px;
+    }
+}

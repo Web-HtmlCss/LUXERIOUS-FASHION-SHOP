@@ -74,8 +74,8 @@ header {
     top: 0;
     right: 0;
     font-size: 14px;
-    height: 100%;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    z-index: 1;
 }
 .close {
     position: relative;

@@ -1,5 +1,5 @@
 @import '../../css/style.css';
-@import '../../css/index.css';
+@import '../../css/fetured.css';
 .filters, .title .title_container {
   max-width: 1140px;
   margin: 0 auto;
@@ -13,14 +13,6 @@
   .filters, .title .title_container {
     margin: 0 8px;
   }
-}
-
-.catalog {
-  position: relative;
-}
-.catalog .menu-panel {
-  height: initial;
-  z-index: 2;
 }
 
 .title {
@@ -59,6 +51,29 @@
   .title .title_container p {
     margin: 24px 0 32px;
   }
+}
+
+.filters, .title .title_container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1172px) {
+  .filters, .title .title_container {
+    margin: 0 16px;
+  }
+}
+@media (max-width: 767px) {
+  .filters, .title .title_container {
+    margin: 0 8px;
+  }
+}
+
+.catalog {
+  position: relative;
+}
+.catalog .menu-panel {
+  height: initial;
+  z-index: 2;
 }
 
 .filters {

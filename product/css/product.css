@@ -1,0 +1,104 @@
+@import '../../css/style.css';
+@import '../../css/fetured.css';
+.title .title_container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1172px) {
+  .title .title_container {
+    margin: 0 16px;
+  }
+}
+@media (max-width: 767px) {
+  .title .title_container {
+    margin: 0 8px;
+  }
+}
+
+.title {
+  height: 148px;
+  background: #F8F3F4;
+}
+.title .title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+.title .title_container p {
+  font-weight: normal;
+  font-size: 24px;
+  color: #F16D7F;
+}
+.title .title_container a, .title .title_container span {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  color: #636363;
+}
+.title .title_container a:last-child {
+  color: #F16D7F;
+  font-weight: 700;
+}
+.title .title_container span {
+  margin: 0 2px;
+}
+@media (max-width: 600px) {
+  .title .title_container {
+    flex-direction: column;
+    justify-content: initial;
+  }
+  .title .title_container p {
+    margin: 24px 0 32px;
+  }
+}
+
+.b-slider {
+  height: 777px;
+  background: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .b-slider {
+    height: 624px;
+  }
+}
+.b-slider .b-slider__slideLeft,
+.b-slider .b-slider__slideRight {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 23.5px);
+  height: 47px;
+  width: 47px;
+  background-color: rgba(42, 42, 42, 0.15);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.b-slider .b-slider__slideRight {
+  right: 0;
+  background-image: url("../img/right.png");
+}
+.b-slider .b-slider__slideRight:hover {
+  background-image: url("../img/rightRed.png");
+}
+.b-slider .b-slider__slideLeft {
+  left: 0;
+  background-image: url("../img/left.png");
+}
+.b-slider .b-slider__slideLeft:hover {
+  background-image: url("../img/leftRed.png");
+}
+
+.b-fetured_margin_b {
+  margin-bottom: 128px;
+}
+@media (max-width: 767px) {
+  .b-fetured_margin_b {
+    margin-bottom: 64px;
+  }
+}/*# sourceMappingURL=product.css.map */
