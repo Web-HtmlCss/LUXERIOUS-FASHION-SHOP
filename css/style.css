@@ -95,7 +95,7 @@ header {
 @media (max-width: 767px) {
     .user, .cart { display: none; }
     .left-brand { display: none; }
-    .right-brand { 
+    .right-brand {
         width: 100%;
         min-height: 363px;
     }
@@ -155,7 +155,7 @@ header {
     font-weight: 700;
 }
 .menu-head {
-    padding: 9px 33px 12px
+    padding: 9px 33px 12px;
 }
 
 @media (max-width: 1300px) {
@@ -197,7 +197,7 @@ header {
     .menu-panel {
         width: 100%;
     }
-}   
+}
 
 .offers {
     display: grid;
@@ -295,7 +295,7 @@ header {
 }
 .fetured-txt {
     background-color: #F8F8F8;
-    padding: 25px 29px 20px 17px
+    padding: 25px 29px 20px 17px;
 }
 .fetured-txt-title {
     font-size: 13px;
@@ -305,7 +305,7 @@ header {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #5D5D5D;    
+    color: #5D5D5D;
     margin: 13px 0 18px;
 }
 .fetured-txt-prise {
@@ -440,7 +440,7 @@ header {
     margin: 0 auto;
     display: flex;
 }
-.subscribe_left ,
+.subscribe_left,
 .subscribe_beetwen,
 .subscribe_right {
    width: 33%;
@@ -495,11 +495,11 @@ header {
         flex-direction: column;
         padding: 54px 10px 120px;
     }
-    .subscribe_left ,
+    .subscribe_left,
     .subscribe_right {
         width: 100%;
     }
-    .subscribe_beetwen{
+    .subscribe_beetwen {
         width: 0%;
     }
     .subscribe_txt {
@@ -510,7 +510,7 @@ header {
     }
 }
 
-footer{
+footer {
     background: #222224;
     height: 80px;
     width: 100%;
