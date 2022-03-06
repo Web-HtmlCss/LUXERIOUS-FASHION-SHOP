@@ -94,6 +94,7 @@
   margin: 11px auto 42px;
   background-image: url("../img/Layer.jpg");
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center center;
   width: 597px;
   height: 724px;
