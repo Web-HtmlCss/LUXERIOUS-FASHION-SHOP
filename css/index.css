@@ -34,7 +34,7 @@
 
 @media (max-width: 767px) {
     .left-brand { display: none; }
-    .right-brand { 
+    .right-brand {
         width: 100%;
         min-height: 363px;
     }
@@ -158,7 +158,7 @@
 }
 .fetured-txt {
     background-color: #F8F8F8;
-    padding: 25px 29px 20px 17px
+    padding: 25px 29px 20px 17px;
 }
 .fetured-txt-title {
     font-size: 13px;
@@ -168,7 +168,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #5D5D5D;    
+    color: #5D5D5D;
     margin: 13px 0 18px;
 }
 .fetured-txt-prise {
