@@ -34,7 +34,7 @@
 
 @media (max-width: 767px) {
     .left-brand { display: none; }
-    .right-brand { 
+    .right-brand {
         width: 100%;
         min-height: 363px;
     }
