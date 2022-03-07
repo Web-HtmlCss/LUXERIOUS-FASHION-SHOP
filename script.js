@@ -12,17 +12,20 @@ let filteActive = document.querySelector('.filterActive-fat');
 
 menuButton.addEventListener('click', function(){ panelMenu.classList.toggle('hidden') });
 menuClose.addEventListener('click', function(){ panelMenu.classList.toggle('hidden') });
+
+if (sizeFilter || filter) {
 sizeFilter.addEventListener('click', function(){ sizeFilterBody.classList.toggle('hidden') });
 sizeFilterDown.addEventListener('click', function(){ sizeFilterBody.classList.toggle('hidden') });
 filter.addEventListener('click', function(){ anime.classList.toggle('onAnime') });
 filteActive.addEventListener('click', function(){ anime.classList.toggle('onAnime') });
+}
 
 let filterCategories = document.querySelectorAll('.category-head');
 filterCategories.forEach(function (category) {
-    category.addEventListener('click', ({target}) => {
-        filterCategories.forEach(function (cat) {
-            cat.classList.remove('active')
+    category.addEventListener('click', function(cat) {
+        filterCategories.forEach(function (cats) {
+            cats.classList.remove('active')
         });
-        target.classList.add('active');
+        cat.target.classList.add('active');
     })
 });

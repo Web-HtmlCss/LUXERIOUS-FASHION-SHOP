@@ -54,15 +54,23 @@
 }
 
 .b-slider {
-  min-height: 777px;
+  height: 777px;
   background: #F7F7F7;
   position: relative;
   border: 1px solid #EAEAEA;
   box-sizing: border-box;
+  padding: 11px 0 42px;
 }
-@media (max-width: 1140px) {
+@media (min-width: 368px) and (max-width: 1140px) {
   .b-slider {
-    min-height: 624px;
+    height: 624px;
+    padding: 30px 0;
+  }
+}
+@media (max-width: 767px) {
+  .b-slider {
+    height: 624px;
+    padding: 85px 0;
   }
 }
 .b-slider .b-slider__slideLeft,
@@ -91,27 +99,10 @@
   background-image: url("../img/leftRed.png");
 }
 .b-slider .b-slider__image {
-  margin: 11px auto 42px;
-  background-image: url("../img/Layer.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
-  width: 597px;
-  height: 724px;
-}
-@media (max-width: 1140px) {
-  .b-slider .b-slider__image {
-    margin: 30px auto;
-    width: 466px;
-    height: 565px;
-  }
-}
-@media (max-width: 767px) {
-  .b-slider .b-slider__image {
-    margin: 85px auto;
-    width: 374px;
-    height: 454px;
-  }
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 
 .b-fetured_margin_b {
