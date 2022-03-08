@@ -14,10 +14,10 @@ menuButton.addEventListener('click', function(){ panelMenu.classList.toggle('hid
 menuClose.addEventListener('click', function(){ panelMenu.classList.toggle('hidden') });
 
 if (sizeFilter || filter) {
-sizeFilter.addEventListener('click', function(){ sizeFilterBody.classList.toggle('hidden') });
-sizeFilterDown.addEventListener('click', function(){ sizeFilterBody.classList.toggle('hidden') });
-filter.addEventListener('click', function(){ anime.classList.toggle('onAnime') });
-filteActive.addEventListener('click', function(){ anime.classList.toggle('onAnime') });
+    sizeFilter.addEventListener('click', function(){ sizeFilterBody.classList.toggle('hidden') });
+    sizeFilterDown.addEventListener('click', function(){ sizeFilterBody.classList.toggle('hidden') });
+    filter.addEventListener('click', function(){ anime.classList.toggle('onAnime') });
+    filteActive.addEventListener('click', function(){ anime.classList.toggle('onAnime') });
 }
 
 let filterCategories = document.querySelectorAll('.category-head');

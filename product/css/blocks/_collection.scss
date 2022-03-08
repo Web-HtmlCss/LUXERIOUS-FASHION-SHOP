@@ -1,0 +1,92 @@
+.b-collection {
+    background-color: white;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    height: 601px;
+    padding: 64.5px 0;
+    text-align: center;
+    .b-collection__title {
+        font-weight: 300;
+        font-size: 14px;
+        color: #F16D7F;
+    }
+    .b-collection__separator_pink {
+        height: 3px;
+        width: 63px;
+        background: #EF5B70;
+        margin: 12px auto;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .b-collection__subtitle {
+        font-weight: 300;
+        font-size: 18px;
+        color: #4D4D4D;
+    }
+    .b-collection__descr {
+        font-weight: 300;
+        font-size: 14px;
+        color: #5E5E5E;
+        width: 555px;
+        margin: 49px auto 33px;
+        @media (max-width: 600px) {
+            width: 326px;
+            margin-top: 32px;
+        }
+    }
+    .b-collection__prise {
+        font-weight: 300;
+        font-size: 24px;
+        color: #EF5B70;
+    }
+    .b-collection__separator_grey {
+        height: 1px;
+        max-width: 641px;
+        background: #EAEAEA;
+        margin: 65px auto;
+        @media (max-width: 700px) {
+            max-width: 175px;
+            margin: 32px auto 49px;
+        }
+    }
+    .b-collection__button {
+        height: 47px;
+        width: 211px;
+        border: 1px solid #FF6A6A;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #F26376;
+        margin: 0 auto;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: white;
+        cursor: pointer;
+    }
+    .b-choose {
+        font-size: 14px;
+        color: #6F6E6E;
+        margin-bottom: 49px;
+        cursor: pointer;
+        @media (max-width: 600px) {
+            font-size: 10px;
+            margin-bottom: 65px;
+        }
+        .b-choose__item {
+            margin: 0 11px;
+        }
+        .b-choose__img {
+            margin-bottom: 2px;
+            margin-left: 9px;
+        }
+    }
+}
+
+.b-collection_centrize {
+    @extend %baseBlock;
+    @media (min-width: 1140px) {
+        position: relative;
+        bottom: 65px;
+    }
+}
