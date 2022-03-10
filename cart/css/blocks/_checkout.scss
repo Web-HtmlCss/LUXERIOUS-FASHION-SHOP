@@ -1,0 +1,43 @@
+.b-checkout {
+    height: 214px;
+    width: 360px;
+    background: #F5F3F3;
+    padding: 39px 43px;
+    box-sizing: border-box;
+    .b-checkout__sub {
+        font-size: 11px;
+        color: #4A4A4A;
+        text-align: end;
+        margin-bottom: 12px;
+    }
+    .b-checkout__total {
+        font-weight: 300;
+        font-size: 16px;
+        color: #222222;
+        text-align: end;
+    }
+    .b-checkout__totalprice,
+    .b-checkout__subprice {
+        margin-left: 17px;
+    }
+    .b-checkout__totalprice {
+        font-weight: 700;
+    }
+    .b-checkout__separator {
+        width: 275px;
+        height: 1px;
+        background: #E2E2E2;
+        margin: 21px auto 17px;
+    }
+    .b-checkout__btn {
+        height: 50px;
+        width: 273px;
+        background: #F16D7F;
+        font-weight: 300 !important;
+        font-size: 16px;
+        color: #FFFFFF;
+        border: none;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
