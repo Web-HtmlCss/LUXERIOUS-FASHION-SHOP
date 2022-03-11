@@ -189,7 +189,7 @@ header {
 }
 .subscribe_container {
     text-align: center;
-    padding: 87px 20px 126px;
+    padding: 87px 0 126px;
     color: #222224;
     max-width: 1140px;
     margin: 0 auto;
@@ -203,7 +203,7 @@ header {
 .subscribe_txt {
     font-size: 20px;
     line-height: 24px;
-    max-width: 360px;
+    max-width: 345px;
     margin: 30px auto;
 }
 .subscribe_title {
@@ -248,7 +248,7 @@ header {
 @media (max-width: 1140px) {
     .subscribe_container {
         flex-direction: column;
-        padding: 54px 10px 120px;
+        padding: 54px 0 120px;
     }
     .subscribe_left ,
     .subscribe_right {
@@ -276,6 +276,7 @@ footer{
     height: 100%;
     position: relative;
     padding-left: 20px;
+    overflow: hidden;
 }
 .footer_left {
     color: #FBFBFB;
