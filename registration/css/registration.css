@@ -1,0 +1,181 @@
+@import '../../css/style.css';
+.regPage, .title .title_container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1172px) {
+  .regPage, .title .title_container {
+    margin: 0 16px;
+  }
+}
+@media (max-width: 767px) {
+  .regPage, .title .title_container {
+    margin: 0 8px;
+  }
+}
+
+.title {
+  height: 148px;
+  background: #F8F3F4;
+}
+.title .title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+.title .title_container p {
+  font-weight: normal;
+  font-size: 24px;
+  color: #F16D7F;
+}
+.title .title_container a, .title .title_container span {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  color: #636363;
+}
+.title .title_container a:last-child {
+  color: #F16D7F;
+  font-weight: 700;
+}
+.title .title_container span {
+  margin: 0 2px;
+}
+@media (max-width: 600px) {
+  .title .title_container {
+    flex-direction: column;
+    justify-content: initial;
+  }
+  .title .title_container p {
+    margin: 24px 0 32px;
+  }
+}
+
+.person .person__name,
+.person .person__login {
+  font-size: 16px;
+  font-weight: 300;
+  color: #222222;
+}
+.person .person__firstName,
+.person .person__lastName,
+.person .person__email,
+.person .person__password {
+  box-sizing: border-box;
+  display: block;
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  margin-top: 20px;
+  padding-left: 16.5px;
+}
+.person .person__firstName::-moz-placeholder, .person .person__lastName::-moz-placeholder, .person .person__email::-moz-placeholder, .person .person__password::-moz-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  color: #B1B1B1;
+}
+.person .person__firstName:-ms-input-placeholder, .person .person__lastName:-ms-input-placeholder, .person .person__email:-ms-input-placeholder, .person .person__password:-ms-input-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  color: #B1B1B1;
+}
+.person .person__firstName::placeholder,
+.person .person__lastName::placeholder,
+.person .person__email::placeholder,
+.person .person__password::placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  color: #B1B1B1;
+}
+.person .person__gender {
+  margin: 31px 0 33px;
+}
+.person .person__gender .person__genderItem {
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  accent-color: grey;
+  cursor: pointer;
+}
+.person .person__gender .person__genderLabel {
+  font-weight: 300;
+  font-size: 11px;
+  color: black;
+  position: relative;
+  bottom: 4px;
+  margin-right: 20px;
+}
+.person .person__hint {
+  width: 359px;
+  height: 32px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 15px 0 39px;
+}
+.person .person__btn {
+  width: 167px;
+  height: 50px;
+  border: none;
+  background: #F16D7F;
+  color: #FFFFFF;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.loyality {
+  max-width: 652px;
+  font-weight: 300;
+  font-size: 24px;
+}
+.loyality .loyality__title,
+.loyality .loyality__description {
+  margin-bottom: 22px;
+}
+.loyality .loyality__items {
+  list-style: none url("../img/v.png") outside;
+  padding-left: 30px;
+}
+.loyality .loyality__items .loyality_item {
+  margin-bottom: 16px;
+  padding-left: 20px;
+  line-height: 24px;
+}
+
+@media (max-width: 600px) {
+  .title_container {
+    justify-content: center !important;
+  }
+}
+
+.regPage {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0 96px;
+}
+@media (max-width: 1100px) {
+  .regPage {
+    padding-top: 40px;
+  }
+  .regPage .regPage__loyality {
+    max-width: 354px;
+    font-size: 16px;
+  }
+  .regPage .regPage__loyality .loyality__title {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 740px) {
+  .regPage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .regPage .regPage__person {
+    margin-bottom: 40px;
+  }
+}/*# sourceMappingURL=registration.css.map */

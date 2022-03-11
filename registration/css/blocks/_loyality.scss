@@ -1,0 +1,18 @@
+.loyality {
+    max-width: 652px;
+    font-weight: 300;
+    font-size: 24px;
+    .loyality__title,
+    .loyality__description {
+        margin-bottom: 22px;
+    }
+    .loyality__items {
+        list-style: none url('../img/v.png') outside;
+        padding-left: 30px;
+        .loyality_item {
+            margin-bottom: 16px;
+            padding-left: 20px;
+            line-height: 24px;
+        }
+    }
+}
