@@ -1,14 +1,14 @@
-.person {
-    .person__name,
-    .person__login {
+.b-person {
+    .b-person__name,
+    .b-person__login {
         font-size: 16px;
         font-weight: 300;
         color: #222222;
     }
-    .person__firstName,
-    .person__lastName,
-    .person__email,
-    .person__password {
+    .b-person__firstName,
+    .b-person__lastName,
+    .b-person__email,
+    .b-person__password {
         box-sizing: border-box;
         display: block;
         width: 360px;
@@ -22,16 +22,16 @@
             color: #B1B1B1;
         }
     }
-    .person__gender {
+    .b-person__gender {
         margin: 31px 0 33px;
-        .person__genderItem {
+        .b-person__genderItem {
             width: 17px;
             height: 17px;
             margin-right: 10px;
             accent-color: grey;
             cursor: pointer;
         }
-        .person__genderLabel {
+        .b-person__genderLabel {
             font-weight: 300;
             font-size: 11px;
             color: black;
@@ -40,7 +40,7 @@
             margin-right: 20px;
         }
     }
-    .person__hint {
+    .b-person__hint {
         width: 359px;
         height: 32px;
         color: #B1B1B1;
@@ -48,7 +48,7 @@
         font-weight: 300;
         margin: 15px 0 39px;
     }
-    .person__btn {
+    .b-person__btn {
         width: 167px;
         height: 50px;
         border: none;

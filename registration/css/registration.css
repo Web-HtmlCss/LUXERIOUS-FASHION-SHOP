@@ -52,16 +52,16 @@
   }
 }
 
-.person .person__name,
-.person .person__login {
+.b-person .b-person__name,
+.b-person .b-person__login {
   font-size: 16px;
   font-weight: 300;
   color: #222222;
 }
-.person .person__firstName,
-.person .person__lastName,
-.person .person__email,
-.person .person__password {
+.b-person .b-person__firstName,
+.b-person .b-person__lastName,
+.b-person .b-person__email,
+.b-person .b-person__password {
   box-sizing: border-box;
   display: block;
   width: 360px;
@@ -70,35 +70,35 @@
   margin-top: 20px;
   padding-left: 16.5px;
 }
-.person .person__firstName::-moz-placeholder, .person .person__lastName::-moz-placeholder, .person .person__email::-moz-placeholder, .person .person__password::-moz-placeholder {
+.b-person .b-person__firstName::-moz-placeholder, .b-person .b-person__lastName::-moz-placeholder, .b-person .b-person__email::-moz-placeholder, .b-person .b-person__password::-moz-placeholder {
   font-size: 13px;
   font-weight: 300;
   color: #B1B1B1;
 }
-.person .person__firstName:-ms-input-placeholder, .person .person__lastName:-ms-input-placeholder, .person .person__email:-ms-input-placeholder, .person .person__password:-ms-input-placeholder {
+.b-person .b-person__firstName:-ms-input-placeholder, .b-person .b-person__lastName:-ms-input-placeholder, .b-person .b-person__email:-ms-input-placeholder, .b-person .b-person__password:-ms-input-placeholder {
   font-size: 13px;
   font-weight: 300;
   color: #B1B1B1;
 }
-.person .person__firstName::placeholder,
-.person .person__lastName::placeholder,
-.person .person__email::placeholder,
-.person .person__password::placeholder {
+.b-person .b-person__firstName::placeholder,
+.b-person .b-person__lastName::placeholder,
+.b-person .b-person__email::placeholder,
+.b-person .b-person__password::placeholder {
   font-size: 13px;
   font-weight: 300;
   color: #B1B1B1;
 }
-.person .person__gender {
+.b-person .b-person__gender {
   margin: 31px 0 33px;
 }
-.person .person__gender .person__genderItem {
+.b-person .b-person__gender .b-person__genderItem {
   width: 17px;
   height: 17px;
   margin-right: 10px;
   accent-color: grey;
   cursor: pointer;
 }
-.person .person__gender .person__genderLabel {
+.b-person .b-person__gender .b-person__genderLabel {
   font-weight: 300;
   font-size: 11px;
   color: black;
@@ -106,7 +106,7 @@
   bottom: 4px;
   margin-right: 20px;
 }
-.person .person__hint {
+.b-person .b-person__hint {
   width: 359px;
   height: 32px;
   color: #B1B1B1;
@@ -114,7 +114,7 @@
   font-weight: 300;
   margin: 15px 0 39px;
 }
-.person .person__btn {
+.b-person .b-person__btn {
   width: 167px;
   height: 50px;
   border: none;
@@ -128,20 +128,20 @@
   cursor: pointer;
 }
 
-.loyality {
+.b-loyality {
   max-width: 652px;
   font-weight: 300;
   font-size: 24px;
 }
-.loyality .loyality__title,
-.loyality .loyality__description {
+.b-loyality .b-loyality__title,
+.b-loyality .b-loyality__description {
   margin-bottom: 22px;
 }
-.loyality .loyality__items {
+.b-loyality .b-loyality__items {
   list-style: none url("../img/v.png") outside;
   padding-left: 30px;
 }
-.loyality .loyality__items .loyality_item {
+.b-loyality .b-loyality__items .b-loyality_item {
   margin-bottom: 16px;
   padding-left: 20px;
   line-height: 24px;
