@@ -2,67 +2,83 @@
     width: 652px;
     height: 306px;
     position: relative;
-    .b-cartItem__img {
+
+    &__img {
         float: left;
     }
-    .b-cartItem__descr {
+
+    &__descr {
         height: inherit;
         display: inline-block;
         margin: 22px 31px;
-        .b-cartItem__title {
-            width: 200px;
-            font-size: 24px;
-            color: #222222;
-            margin-bottom: 42px;
-        }
-        .b-cartIem__var {
-            font-size: 22px;
-            color: #575757;
-            margin-bottom: 6px;
-        }
-        .b-cartIem__val {
-            color: #656565;
-        }
-        .b-cartIem__valQ {
-            display: inline-block;
-            color: #656565;
-            border: 1px solid #EAEAEA;
-            padding: 2px 16px;
-            margin-left: 24px;
-        }
     }
-    .b-cartItem__close {
+
+    &__title {
+        width: 200px;
+        font-size: 24px;
+        color: #222222;
+        margin-bottom: 42px;
+    }
+
+    &__descr &__var {
+        font-size: 22px;
+        color: #575757;
+        margin-bottom: 6px;
+    }
+
+    &__val {
+        color: #656565;
+    }
+
+    &__valQ {
+        display: inline-block;
+        color: #656565;
+        border: 1px solid #EAEAEA;
+        padding: 2px 16px;
+        margin-left: 24px;
+    }
+
+    &__close {
         position: absolute;
         top: 28px;
         right: 22px;
+        cursor: pointer;
     }
+
     @media (max-width: 1140px) and (min-width: 768px) {
             width: 734px;
     }
+
     @media (max-width: 767px) {
         width: 358px;
         height: 188px;
-        .b-cartItem__img {
+
+        &__img {
             width: 144px;
             height: 100%;
         }
-        .b-cartItem__descr {
-                margin: 13px 17px;
-            .b-cartItem__title {
-                font-size: 16px;
-                width: 130px;
-                margin-bottom: 26px;
-            }
-            .b-cartIem__var {
-                font-size: 14px;
-                margin-bottom: 4px;
-            }
-            .b-cartIem__valQ {
-                margin-left: 24px;
-                padding: 0 9px;
-            }
+
+        &__descr {
+            margin: 13px 17px;
         }
-        .b-cartItem__close {
+
+        &__title {
+            font-size: 16px;
+            width: 130px;
+            margin-bottom: 26px;
+        }
+
+        &__var {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        &__valQ {
+            margin-left: 24px;
+            padding: 0 9px;
+        }
+
+        &__close {
             width: 10px;
             height: 10px;
             top: 17px;

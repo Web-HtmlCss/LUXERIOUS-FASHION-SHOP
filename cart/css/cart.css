@@ -57,39 +57,40 @@
   height: 306px;
   position: relative;
 }
-.b-cartItem .b-cartItem__img {
+.b-cartItem__img {
   float: left;
 }
-.b-cartItem .b-cartItem__descr {
+.b-cartItem__descr {
   height: inherit;
   display: inline-block;
   margin: 22px 31px;
 }
-.b-cartItem .b-cartItem__descr .b-cartItem__title {
+.b-cartItem__title {
   width: 200px;
   font-size: 24px;
   color: #222222;
   margin-bottom: 42px;
 }
-.b-cartItem .b-cartItem__descr .b-cartIem__var {
+.b-cartItem__descr .b-cartItem__var {
   font-size: 22px;
   color: #575757;
   margin-bottom: 6px;
 }
-.b-cartItem .b-cartItem__descr .b-cartIem__val {
+.b-cartItem__val {
   color: #656565;
 }
-.b-cartItem .b-cartItem__descr .b-cartIem__valQ {
+.b-cartItem__valQ {
   display: inline-block;
   color: #656565;
   border: 1px solid #EAEAEA;
   padding: 2px 16px;
   margin-left: 24px;
 }
-.b-cartItem .b-cartItem__close {
+.b-cartItem__close {
   position: absolute;
   top: 28px;
   right: 22px;
+  cursor: pointer;
 }
 @media (max-width: 1140px) and (min-width: 768px) {
   .b-cartItem {
@@ -101,27 +102,27 @@
     width: 358px;
     height: 188px;
   }
-  .b-cartItem .b-cartItem__img {
+  .b-cartItem__img {
     width: 144px;
     height: 100%;
   }
-  .b-cartItem .b-cartItem__descr {
+  .b-cartItem__descr {
     margin: 13px 17px;
   }
-  .b-cartItem .b-cartItem__descr .b-cartItem__title {
+  .b-cartItem__title {
     font-size: 16px;
     width: 130px;
     margin-bottom: 26px;
   }
-  .b-cartItem .b-cartItem__descr .b-cartIem__var {
+  .b-cartItem__var {
     font-size: 14px;
     margin-bottom: 4px;
   }
-  .b-cartItem .b-cartItem__descr .b-cartIem__valQ {
+  .b-cartItem__valQ {
     margin-left: 24px;
     padding: 0 9px;
   }
-  .b-cartItem .b-cartItem__close {
+  .b-cartItem__close {
     width: 10px;
     height: 10px;
     top: 17px;
@@ -207,32 +208,38 @@
   padding: 39px 43px;
   box-sizing: border-box;
 }
-.b-checkout .b-checkout__sub {
+
+.b-checkout__sub {
   font-size: 11px;
   color: #4A4A4A;
   text-align: end;
   margin-bottom: 12px;
 }
-.b-checkout .b-checkout__total {
+
+.b-checkout__total {
   font-weight: 300;
   font-size: 16px;
   color: #222222;
   text-align: end;
 }
-.b-checkout .b-checkout__totalprice,
-.b-checkout .b-checkout__subprice {
+
+.b-checkout__totalprice,
+.b-checkout__subprice {
   margin-left: 17px;
 }
-.b-checkout .b-checkout__totalprice {
+
+.b-checkout__totalprice {
   font-weight: 700;
 }
-.b-checkout .b-checkout__separator {
+
+.b-checkout__separator {
   width: 275px;
   height: 1px;
   background: #E2E2E2;
   margin: 21px auto 17px;
 }
-.b-checkout .b-checkout__btn {
+
+.b-checkout__btn {
   height: 50px;
   width: 273px;
   background: #F16D7F;

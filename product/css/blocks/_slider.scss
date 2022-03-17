@@ -14,8 +14,8 @@
         padding: 85px 0;
     }
 
-    .b-slider__slideLeft,
-    .b-slider__slideRight {
+    &__slideLeft,
+    &__slideRight {
         cursor: pointer;
         position: absolute;
         top: calc(50% - 47px / 2);
@@ -25,21 +25,24 @@
         background-repeat: no-repeat;
         background-position: center center;
     }
-    .b-slider__slideRight {
+
+    &__slideRight {
         right: 0;
         background-image: url('../img/right.png');
         &:hover {
             background-image: url('../img/rightRed.png');
         }
     }
-    .b-slider__slideLeft {
+
+    &__slideLeft {
         left: 0;
         background-image: url('../img/left.png');
         &:hover {
             background-image: url('../img/leftRed.png');
         }
     }
-    .b-slider__image {
+    
+    &__image {
         display: block;
         height: 100%;
         width: auto;
