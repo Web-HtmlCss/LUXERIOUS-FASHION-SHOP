@@ -73,8 +73,7 @@
     padding: 85px 0;
   }
 }
-.b-slider .b-slider__slideLeft,
-.b-slider .b-slider__slideRight {
+.b-slider__slideLeft, .b-slider__slideRight {
   cursor: pointer;
   position: absolute;
   top: calc(50% - 23.5px);
@@ -84,52 +83,25 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
-.b-slider .b-slider__slideRight {
+.b-slider__slideRight {
   right: 0;
   background-image: url("../img/right.png");
 }
-.b-slider .b-slider__slideRight:hover {
+.b-slider__slideRight:hover {
   background-image: url("../img/rightRed.png");
 }
-.b-slider .b-slider__slideLeft {
+.b-slider__slideLeft {
   left: 0;
   background-image: url("../img/left.png");
 }
-.b-slider .b-slider__slideLeft:hover {
+.b-slider__slideLeft:hover {
   background-image: url("../img/leftRed.png");
 }
-.b-slider .b-slider__image {
+.b-slider__image {
   display: block;
   height: 100%;
   width: auto;
   margin: 0 auto;
-}
-
-.b-fetured_margin {
-  margin-top: 128px;
-  margin-bottom: 128px;
-}
-@media (max-width: 767px) {
-  .b-fetured_margin {
-    margin-top: 64px;
-    margin-bottom: 64px;
-  }
-}
-@media (min-width: 1140px) {
-  .b-fetured_margin {
-    margin-top: 64px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1140px) {
-  .b-fetured_size3-2 .fetured-block:nth-child(3) {
-    display: none;
-  }
-}
-@media (max-width: 767px) {
-  .b-fetured_size3-2 .fetured-block:nth-child(2) {
-    display: none;
-  }
 }
 
 .b-collection {
@@ -140,12 +112,12 @@
   padding: 64.5px 0;
   text-align: center;
 }
-.b-collection .b-collection__title {
+.b-collection__title {
   font-weight: 300;
   font-size: 14px;
   color: #F16D7F;
 }
-.b-collection .b-collection__separator_pink {
+.b-collection__separator_pink {
   height: 3px;
   width: 63px;
   background: #EF5B70;
@@ -153,12 +125,12 @@
   margin-top: 12px;
   margin-bottom: 12px;
 }
-.b-collection .b-collection__subtitle {
+.b-collection__subtitle {
   font-weight: 300;
   font-size: 18px;
   color: #4D4D4D;
 }
-.b-collection .b-collection__descr {
+.b-collection__descr {
   font-weight: 300;
   font-size: 14px;
   color: #5E5E5E;
@@ -166,29 +138,29 @@
   margin: 49px auto 33px;
 }
 @media (max-width: 600px) {
-  .b-collection .b-collection__descr {
+  .b-collection__descr {
     width: 326px;
     margin-top: 32px;
   }
 }
-.b-collection .b-collection__prise {
+.b-collection__prise {
   font-weight: 300;
   font-size: 24px;
   color: #EF5B70;
 }
-.b-collection .b-collection__separator_grey {
+.b-collection__separator_grey {
   height: 1px;
   max-width: 641px;
   background: #EAEAEA;
   margin: 65px auto;
 }
 @media (max-width: 700px) {
-  .b-collection .b-collection__separator_grey {
+  .b-collection__separator_grey {
     max-width: 175px;
     margin: 32px auto 49px;
   }
 }
-.b-collection .b-collection__button {
+.b-collection__button {
   height: 47px;
   width: 211px;
   border: 1px solid #FF6A6A;
@@ -203,29 +175,57 @@
   background: white;
   cursor: pointer;
 }
-.b-collection .b-choose {
+
+@media (min-width: 1140px) {
+  .b-collection_centrize {
+    position: relative;
+    bottom: 65px;
+  }
+}
+
+.b-choose {
   font-size: 14px;
   color: #6F6E6E;
   margin-bottom: 49px;
   cursor: pointer;
 }
 @media (max-width: 600px) {
-  .b-collection .b-choose {
+  .b-choose {
     font-size: 10px;
     margin-bottom: 65px;
   }
 }
-.b-collection .b-choose .b-choose__item {
+.b-choose__item {
   margin: 0 11px;
 }
-.b-collection .b-choose .b-choose__img {
+.b-choose__img {
   margin-bottom: 2px;
   margin-left: 9px;
 }
 
+.fetured_margin {
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+@media (max-width: 767px) {
+  .fetured_margin {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+}
 @media (min-width: 1140px) {
-  .b-collection_centrize {
-    position: relative;
-    bottom: 65px;
+  .fetured_margin {
+    margin-top: 64px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+  .fetured_size3-2 .fetured-block:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .fetured_size3-2 .fetured-block:nth-child(2) {
+    display: none;
   }
 }/*# sourceMappingURL=product.css.map */
