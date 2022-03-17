@@ -95,7 +95,7 @@ header {
     color: #6F6E6E;
 }
 .menu-group a:hover {
-    color: #F16D7F
+    color: #F16D7F;
 }
 .menu-title {
     padding: 37px 34px 15px;
@@ -113,7 +113,7 @@ header {
         column-count: 2;
         column-gap: 0;
     }
-    .menu-group{
+    .menu-group {
         break-inside: avoid;
         page-break-inside: avoid;
     }
@@ -195,7 +195,7 @@ header {
     margin: 0 auto;
     display: flex;
 }
-.subscribe_left ,
+.subscribe_left,
 .subscribe_beetwen,
 .subscribe_right {
    width: 33%;
@@ -250,11 +250,11 @@ header {
         flex-direction: column;
         padding: 54px 0 120px;
     }
-    .subscribe_left ,
+    .subscribe_left,
     .subscribe_right {
         width: 100%;
     }
-    .subscribe_beetwen{
+    .subscribe_beetwen {
         width: 0%;
     }
     .subscribe_txt {
@@ -265,7 +265,7 @@ header {
     }
 }
 
-footer{
+footer {
     background: #222224;
     height: 80px;
     width: 100%;
