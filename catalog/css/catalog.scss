@@ -33,10 +33,10 @@
         position: relative;
     }
 
-    .test-anime {       
+    .test-anime {
         visibility: hidden;
-        height: 531px; 
-        width: 360px; 
+        height: 531px;
+        width: 360px;
         background: white;
         position: absolute;
         top: 0;
@@ -63,9 +63,9 @@
         }
     }
     .onAnime {
-        visibility: visible !important;  
+        visibility: visible !important;
     }
-    .onAnime .back { 
+    .onAnime .back {
         transform: rotateY(-90deg);
         transition-delay: 0s;
         transition-duration: 0.5s;
@@ -201,7 +201,7 @@
             cursor: pointer;
         }
         .rightFltr {
-            font-size: 12px !important; 
+            font-size: 12px !important;
             margin-left: 13px !important;
             img {
                 margin-left: 5px !important;
@@ -233,12 +233,11 @@
         font-size: 16px;
         line-height: 43px;
         color: #6F6E6E;
-        &:hover { 
+        &:hover {
             transform: scale(1.5);
         }
-        
-    }    
+    }
     .active {
-        color: #EF5B70; 
+        color: #EF5B70;
     }
 }
