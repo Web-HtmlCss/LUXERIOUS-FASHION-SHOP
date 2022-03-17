@@ -4,7 +4,7 @@
 @import 'blocks/_person.scss';
 @import 'blocks/_loyality.scss';
 
-.title_container{
+.title_container {
     @media (max-width: 600px) {
         justify-content: center !important;
     }
@@ -15,7 +15,7 @@
     justify-content: space-between;
     padding: 64px 0 96px;
 
-    @media (max-width: 1100px){
+    @media (max-width: 1100px) {
         padding-top: 40px;
         .regPage__loyality {
             max-width: 354px;
