@@ -29,3 +29,63 @@ filterCategories.forEach(function (category) {
         cat.target.classList.add('active');
     })
 });
+
+// интерактивная корзина
+let cartButton = document.querySelector('.cart-items');
+let cartPanel = document.querySelector('.cart-panel');
+cartButton.addEventListener('mouseover', () => {
+    cartPanel.classList.remove('hidden');
+})
+cartButton.addEventListener('mouseout', () => {
+    cartPanel.classList.add('hidden');
+})
+
+let cart = {};
+
+document.querySelectorAll('.fetured-block').forEach((productCard)=>{
+    productCard.addEventListener('click', e => {
+        if (e.target.classList.contains('hover-fog-btn') || e.target.parentNode.classList.contains('hover-fog-btn') ) {
+            let productName = e.currentTarget.querySelector('.fetured-txt-title').innerText;
+            let productprice = e.currentTarget.querySelector('.fetured-txt-prise').innerText.replace('$','');
+            incrCartCount();
+            addToCart(productName, productprice);
+            renderCartPanel();
+        }
+    })
+})
+
+function incrCartCount() {
+    document.querySelector('.cart-items>span').innerText++;
+}
+
+function addToCart(product, price) {
+   if (product in cart) {
+    cart[product].count++;
+   }
+   else {
+       cart[product] = {};
+       cart[product].price = price;
+       cart[product].count = 1;
+   }
+}
+
+function renderCartPanel() {
+    let productsEl = document.querySelector('.cartPanel-items');
+    productsEl.innerHTML = '';
+    let totalSumm = 0;
+    for (prod in cart){
+        productsEl.insertAdjacentHTML('beforeEnd', getProductMarkup(prod))
+        totalSumm += cart[prod].price * cart[prod].count;
+    }
+    document.querySelector('.cart-total').innerText = totalSumm.toFixed(2);
+}
+
+function getProductMarkup(product) {
+    return `
+    <div class="cartPanel-item">
+        <div class="prod-name">${product}</div>
+        <div>${cart[product].count}</div>
+        <div>${cart[product].price}</div>
+        <div>${(cart[product].count * cart[product].price).toFixed(2)}</div>
+    </div>
+`}

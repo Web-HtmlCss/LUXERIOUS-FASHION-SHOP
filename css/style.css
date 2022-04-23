@@ -23,7 +23,6 @@ header {
 }
 .head-box {
     padding: 20px 16px;
-    overflow: hidden;
     align-items: center;
     margin: 0 auto;
     max-width: 1140px;
@@ -33,6 +32,7 @@ header {
 }
 .right-head {
     text-align: right;
+    position: relative;
 }
 
 .menu-img {
@@ -62,6 +62,30 @@ header {
     font-size: 12px;
 }
 
+.cart-panel {
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    z-index: 1;
+    background: white;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    min-width: 375px;
+    padding: 10px;
+    text-align: center;
+}
+.cartPanel-header,
+.cartPanel-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.prod-name{
+    width: 190px;
+}
+.cartPanel-total{
+    text-align: right;
+    font-weight: bold;
+}
 
 @media (max-width: 767px) {
     .user, .cart { display: none; }
