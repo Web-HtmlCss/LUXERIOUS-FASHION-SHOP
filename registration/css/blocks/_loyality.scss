@@ -1,0 +1,18 @@
+.b-loyality {
+    max-width: 652px;
+    font-weight: 300;
+    font-size: 24px;
+    .b-loyality__title,
+    .b-loyality__description {
+        margin-bottom: 22px;
+    }
+    .b-loyality__items {
+        list-style: none url('../img/v.png') outside;
+        padding-left: 30px;
+        .b-loyality_item {
+            margin-bottom: 16px;
+            padding-left: 20px;
+            line-height: 24px;
+        }
+    }
+}

@@ -1,0 +1,132 @@
+@import 'ie.css';
+
+.fetured a{
+    text-decoration: none;
+    color: black;
+}
+
+.fetured {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.fetured-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+.fetured-description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin: 6px 0 48px;
+}
+.fetured-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 0 auto;
+}
+.fetured-container img {
+    width: 100%;
+    display: block;
+}
+.fetured-txt {
+    background-color: #F8F8F8;
+    padding: 25px 29px 20px 17px;
+}
+.fetured-txt-title {
+    font-size: 13px;
+    line-height: 16px;
+}
+.fetured-txt-body {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 13px 0 18px;
+}
+.fetured-txt-prise {
+    font-size: 16px;
+    line-height: 19px;
+}
+.btn-browse {
+    width: 211px;
+    height: 47px;
+    background: none;
+    border: 1px solid #ff6a6a;
+    color: #F26376;
+    font-size: 16px;
+    line-height: 19px;
+    display: block;
+    margin: 49px auto 95px;
+    cursor: pointer;
+}
+.btn-browse:hover {
+    background-color: #F16D7F;
+    color: white;
+}
+.fetured-img {
+    position: relative;
+}
+.hover-fog {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.hover-fog-btn {
+    border: 1px solid white;
+    padding: 10px 12px 8px 13px;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    background: none;
+    display: flex;
+    cursor: pointer;
+}
+.hover-fog-btn img {
+    height: 24px;
+    width: 26px;
+    padding-right: 11px;
+
+}
+.fetured-img:hover .hover-fog {
+    display: flex;
+}
+
+@media (max-width: 767px) {
+    .fetured {
+        padding: 0 8px;
+    }
+    .fetured-description {
+        margin: 3px 0 64px;
+    }
+    .fetured-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .btn-browse {
+        margin: 41px auto 96px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+    .fetured-description {
+        margin: 4px 0 74px;
+    }
+    .fetured-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .btn-browse {
+        margin: 33px auto 65px;
+    }
+}

@@ -1,0 +1,51 @@
+.b-slider {
+    height: 777px;
+    background: #F7F7F7;
+    position: relative;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    padding: 11px 0 42px;
+    @media (min-width: 768px) and (max-width: 1140px) {
+        height: 624px;
+        padding: 30px 0;
+    }
+    @media (max-width: 767px) {
+        height: 624px;
+        padding: 85px 0;
+    }
+
+    &__slideLeft,
+    &__slideRight {
+        cursor: pointer;
+        position: absolute;
+        top: calc(50% - 47px / 2);
+        height: 47px;
+        width: 47px;
+        background-color: rgba(42, 42, 42, 0.15);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__slideRight {
+        right: 0;
+        background-image: url('../img/right.png');
+        &:hover {
+            background-image: url('../img/rightRed.png');
+        }
+    }
+
+    &__slideLeft {
+        left: 0;
+        background-image: url('../img/left.png');
+        &:hover {
+            background-image: url('../img/leftRed.png');
+        }
+    }
+
+    &__image {
+        display: block;
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+    }
+}

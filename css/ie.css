@@ -34,13 +34,13 @@
         right: 50%;
         transform: translate(50%, 0);
     }
-}
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .fetured-container {
         display: -ms-grid;
         -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
         -ms-grid-rows: 1fr 30px 1fr;
+        padding: 0 16px;
+        max-width: 1140px;
     }
     .fetured-block:nth-child(1) {
         -ms-grid-column: 1;
@@ -66,9 +66,27 @@
         -ms-grid-column: 5;
         -ms-grid-row: 3;
     }
-}
 
-@media all and (max-width: 1123px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .container {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+        -ms-grid-rows: 1fr;
+    }
+    .servise:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+    .servise:nth-child(2) {
+        -ms-grid-column: 3;
+        -ms-grid-row: 1;
+    }
+    .servise:nth-child(3) {
+        -ms-grid-column: 5;
+        -ms-grid-row: 1;
+    }
+}    
+
+@media all and (max-width: 1140px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .offers{
         -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
         -ms-grid-rows: 167px 20px 116px;
@@ -93,8 +111,6 @@
         -ms-grid-row: 3;
         -ms-grid-column-span : 5;
     }
-
-
 
     .fetured-container {
         -ms-grid-columns: 1fr 16px 1fr;
@@ -124,6 +140,24 @@
         -ms-grid-column: 3;
         -ms-grid-row: 5;
     }
+
+    .container {
+        display: -ms-grid;
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 1fr 30px 1fr 30px 1fr;
+    }
+    .servise:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 1;
+    }
+    .servise:nth-child(2) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 3;
+    }
+    .servise:nth-child(3) {
+        -ms-grid-column: 1;
+        -ms-grid-row: 5;
+    }
 }
 
 @media all and (max-width: 767px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -148,11 +182,10 @@
         -ms-grid-row: 7;
     }
     
-
-
     .fetured-container {
         -ms-grid-columns: 1fr;
         -ms-grid-rows: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr ;
+        padding: 0 8px
     }
     .fetured-block:nth-child(1) {
         -ms-grid-column: 1;
@@ -179,8 +212,3 @@
         -ms-grid-row: 11;
     }
 }
-
-
-
-
-
