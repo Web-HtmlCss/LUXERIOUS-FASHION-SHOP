@@ -10,6 +10,7 @@
     <title>Cart</title>
 </head>
 <body>
+    <div id="app">
     <header>
         <div class="head-box">
             <div class="left-head">
@@ -19,12 +20,7 @@
             <div class="right-head">
                 <a href="#" class="menu-p menu"><img src="../img/headmenu.png" alt="" class="menu-img"></a>
                 <a href="#" class="menu-p user"><img src="../img/headuser.png" alt="" class="menu-img"></a>
-                <a href="#" class="menu-p cart">
-                    <div class="cart-items">
-                        <img src="../img/headcart.png" alt="" class="menu-img">
-                        <span>5</span>
-                    </div>
-                </a>
+                <cart ref="cart"></cart>
             </div>
         </div>
     </header>
@@ -75,6 +71,9 @@
             </div>
             <main class="cartBody">
                 <div class="cartFirstPart">
+                    <order></order>
+
+                    <!--
                     <div class="cartFirstPart__items">
                         <div class="cartFirstPart__item b-cartItem b-cartItem_shadow">
                             <img class="b-cartItem__img" src="img/1.jpg" alt="1">
@@ -119,6 +118,7 @@
                             <img class="b-cartItem__close" src="img/x.png" alt="x">
                         </div>
                     </div>
+                -->
                     <div class="cartFirstPart__buttons">
                         <button class="cartFirstPart__button">CLEAR SHOPPING CART</button>
                         <button class="cartFirstPart__button">CONTINUE SHOPPING</button>
@@ -169,6 +169,7 @@
                 </div>
             </div>
        </div>
+    </div>  
     </div>   
     <footer>
         <div class="footer_container">
@@ -193,6 +194,12 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="../script.js"></script>
+    <script src="../CartComponent.js"></script>
+    <script src="OrderComponent.js"></script>
+    
+
+    <script src="../vueMain.js"></script>
 </body>
 </html>

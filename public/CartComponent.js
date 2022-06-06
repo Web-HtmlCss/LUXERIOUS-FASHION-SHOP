@@ -57,9 +57,9 @@ Vue.component('cart', {
         },
     },
     template: `<div style="display: inline-block">
-               <a href="cart/cart.html" @mouseover="showCart = true" @mouseout="showCart = false" class="menu-p cart">
+               <a href="/cart/cart.html" @mouseover="showCart = true" @mouseout="showCart = false" class="menu-p cart">
                    <div class="cart-items">
-                       <img src="img/headcart.png" alt="" class="menu-img">
+                       <img src="/img/headcart.png" alt="" class="menu-img">
                        <span>{{ countGoods }}</span>
                    </div>
                </a>

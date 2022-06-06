@@ -59,6 +59,8 @@
 }
 .b-cartItem__img {
   float: left;
+  width: 262px;
+  height: 306px;
 }
 .b-cartItem__descr {
   height: inherit;
