@@ -5,7 +5,7 @@ Vue.component('order', {
           cartItems: [],
      //     showCart: false,
           amount: 0,
-      //    countGoods: 0
+          countGoods: 0
       }
     },
     mounted(){
@@ -34,12 +34,43 @@ Vue.component('order', {
             })
         },
     },
-    template: `<div class="cartFirstPart__items">
-                  <order-item v-for="item of cartItems" 
-                  :key="item.id_product" 
-                  :orderItem="item">
-                  </order-item>
-               </div>
+    template: `
+        <main class="cartBody">
+            <div class="cartFirstPart">
+                <div class="cartFirstPart__items">
+                    <order-item v-for="item of cartItems" 
+                    :key="item.id_product" 
+                    :orderItem="item">
+                    </order-item>
+                </div>
+                <div class="cartFirstPart__buttons">
+                    <button class="cartFirstPart__button">CLEAR SHOPPING CART</button>
+                    <button class="cartFirstPart__button">CONTINUE SHOPPING</button>
+                </div>
+            </div>
+            <div class="cartSecondPart">
+                <div class="cartSecondPart__address b-address">
+                    <div class="b-address_title">
+                        SHIPPING ADRESS
+                    </div>
+                    <input type="text" name="country" placeholder="Bangladesh" class="b-address__input b-address__country">
+                    <input type="text" name="state" placeholder="State" class="b-address__input b-address__state">
+                    <input type="text" name="zip" placeholder="Postcode / Zip" class="b-address__input b-saddress__zip">
+                    <button class="b-address__btn">GET A QUOTE</button>
+                </div>
+                <div class="cartSecondPart__checkout b-checkout">
+                    <div class="b-checkout__sub">
+                        SUB TOTAL <span class="b-checkout__subprice">$ {{amount}}</span>
+                    </div>
+                    <div class="b-checkout__total">
+                        GRAND TOTAL <span class="b-checkout__totalprice red-txt">$ {{amount}}</span>
+                    </div>
+                    <div class="b-checkout__separator"></div>
+                    <button class="b-checkout__btn">PROCEED TO CHECKOUT</button>
+                </div>
+            </div>
+        </main>
+
     `
 
 });
@@ -65,7 +96,7 @@ Vue.component('order-item', {
                            Quantity: <div class="b-cartItem__valQ">{{ orderItem.quantity }}</div>
                        </div>
                    </div>
-                   <img class="b-cartItem__close" src="img/x.png" alt="x">
+                   <img class="b-cartItem__close" @click="$parent.removeProduct(orderItem)" src="img/x.png" alt="x">
                </div>
     `
 

@@ -42,19 +42,6 @@ Vue.component('cart', {
             this.amount += item.price;
         
         },
-        removeProduct(item){
-            let find = this.cartItems.find(el => el.id_product === item.id_product);
-            this.$parent.deleteJson(`/api/cart/${ item.id_product }`)
-            .then(data => {
-                if (data.result) {
-                    this.cartItems.splice(this.cartItems.indexOf(item), 1);
-                    this.countGoods--;
-                    this.amount -= (find.price * find.quantity);
-                } else {
-                    console.log('error');
-                }
-            })
-        },
     },
     template: `<div style="display: inline-block">
                <a href="/cart/cart.html" @mouseover="showCart = true" @mouseout="showCart = false" class="menu-p cart">
@@ -92,7 +79,6 @@ Vue.component('cart-item', {
                    <div>{{ cartItem.quantity }}</div>
                    <div>{{ cartItem.price }}</div>
                    <div>{{(cartItem.quantity*cartItem.price).toFixed(2)}}</div>
-                   <button class="del-btn" @click="$parent.removeProduct(cartItem)">&times;</button>
                </div>
     `
 })

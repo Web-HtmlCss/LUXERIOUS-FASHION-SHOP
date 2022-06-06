@@ -78,9 +78,7 @@ header {
     padding: 10px;
     text-align: center;
 }
-.cartPanel-header{
-    margin-right: 30px;
-}
+
 .cartPanel-header,
 .cartPanel-item {
     display: flex;
