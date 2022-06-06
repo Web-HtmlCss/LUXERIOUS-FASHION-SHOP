@@ -10,6 +10,8 @@
     <title>Shop</title>
 </head>
 <body>
+    <div id="app">
+
     <header>
         <div class="head-box">
             <div class="left-head">
@@ -19,12 +21,15 @@
             <div class="right-head">
                 <a href="#" class="menu-p menu"><img src="img/headmenu.png" alt="" class="menu-img"></a>
                 <a href="registration/registration.html" class="menu-p user"><img src="img/headuser.png" alt="" class="menu-img"></a>
+                <cart ref="cart"></cart>
+<!--
                 <a href="cart/cart.html" class="menu-p cart">
                     <div class="cart-items">
                         <img src="img/headcart.png" alt="" class="menu-img">
                         <span>5</span>
                     </div>
                 </a>
+-->
             </div>
         </div>
     </header>
@@ -135,6 +140,10 @@
             <div class="fetured-description">
                 Shop for items based on what we featured in this week
             </div>
+            <products ref="products"></products>
+
+<!--
+
             <div class="fetured-container">
                 <div class="fetured-block">
                     <div class="fetured-img">
@@ -271,6 +280,8 @@
                     </div>
                 </div>
             </div>
+-->
+
             <button class="btn-browse">
                 Browse All Product
             </button>
@@ -329,6 +340,7 @@
             </div>
         </div>
     </div>
+    </div>
     <footer>
         <div class="footer_container">
             <div class="footer_left">
@@ -352,6 +364,13 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
     <script src="script.js"></script>
+
+    <script src="ProductComponent.js"></script>
+    <script src="CartComponent.js"></script>
+
+    <script src="vueMain.js"></script>
 </body>
 </html>
