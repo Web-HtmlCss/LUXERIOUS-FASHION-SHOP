@@ -11,19 +11,7 @@
 </head>
 <body>
     <div id="app">
-    <header>
-        <div class="head-box">
-            <div class="left-head">
-                <a href="../index.html" class="menu-p logo"><img src="../img/headlogo.png" alt="" class="menu-img"></a>
-                <a href="#" class="menu-p find"><img src="../img/headfind.png" alt="" class="menu-img"></a>
-            </div>
-            <div class="right-head">
-                <a href="#" class="menu-p menu"><img src="../img/headmenu.png" alt="" class="menu-img"></a>
-                <a href="#" class="menu-p user"><img src="../img/headuser.png" alt="" class="menu-img"></a>
-                <cart ref="cart"></cart>
-            </div>
-        </div>
-    </header>
+    <headline ref="head"></headline>
     <div class="wrapper">
         <div class='cartPage'>
             <div class="menu-panel hidden">
@@ -121,11 +109,13 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="../CartComponent.js"></script>
+    <script src="/js/CartComponent.js"></script>
     <script src="OrderComponent.js"></script>
-    <script src="../vueMain.js"></script>
+    <script src="/js/HeadLineComponent.js"></script>
 
-    <script src="../script.js"></script>
+    <script src="/js/vueMain.js"></script>
+
+    <script src="/js/script.js"></script>
 
 </body>
 </html>

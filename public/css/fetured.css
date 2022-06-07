@@ -98,6 +98,11 @@
     padding-right: 11px;
 
 }
+
+.hover-fog-btn:active {
+    background: black;
+}
+
 .fetured-img:hover .hover-fog {
     display: flex;
 }

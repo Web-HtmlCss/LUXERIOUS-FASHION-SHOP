@@ -35,7 +35,7 @@ Vue.component('product', {
                 <div class="fetured-img">
                     <img :src="product.img" alt="Some img">
                     <div class="hover-fog">
-                        <button class="hover-fog-btn" @click="$root.$refs.cart.addProduct(product)">
+                        <button class="hover-fog-btn" @click="$root.$refs.head.$refs.cart.addProduct(product)">
                             <img src="img/Vector.svg" alt="cart">
                             Add to Cart
                         </button>

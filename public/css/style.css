@@ -16,10 +16,16 @@ body {
 .hidden {
     display: none;
 }
-
-header {
+.head-space{
+    height: 75px;
+}
+.head {
     background-color: #222222;
     height: 75px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
 }
 .head-box {
     padding: 20px 16px;
@@ -103,6 +109,9 @@ header {
     .user, .cart { display: none; }
 }
 
+.wrapper{
+    position: relative;
+}
 .menu-panel {
     width: 232px;
     position: absolute;

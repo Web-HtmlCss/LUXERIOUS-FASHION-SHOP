@@ -10,24 +10,8 @@
     <title>Catalog</title>
 </head>
 <body>
-    <header>
-        <div class="head-box">
-            <div class="left-head">
-                <a href="#" class="menu-p logo"><img src="../img/headlogo.png" alt="" class="menu-img"></a>
-                <a href="#" class="menu-p find"><img src="../img/headfind.png" alt="" class="menu-img"></a>
-            </div>
-            <div class="right-head">
-                <a href="#" class="menu-p menu"><img src="../img/headmenu.png" alt="" class="menu-img"></a>
-                <a href="#" class="menu-p user"><img src="../img/headuser.png" alt="" class="menu-img"></a>
-                <a href="#" class="menu-p cart">
-                    <div class="cart-items">
-                        <img src="../img/headcart.png" alt="" class="menu-img">
-                        <span>5</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </header>
+    <div id="app">
+    <headline ref="head"></headline>
     <div class="wrapper">
         <div class='catalog'>
             <div class="menu-panel hidden">
@@ -447,6 +431,7 @@
             </div>
         </div>
     </div>
+    </div>
     <footer>
         <div class="footer_container">
             <div class="footer_left">
@@ -470,6 +455,11 @@
             </div>
         </div>
     </footer>
-    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="/js/CartComponent.js"></script>
+    <script src="/js/HeadLineComponent.js"></script>
+
+    <script src="/js/vueMain.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

@@ -1,23 +1,9 @@
 Vue.component('order', {
     data(){
       return {
-          cartUrl: '/getBasket.json',
-          cartItems: [],
-     //     showCart: false,
-          amount: 0,
-          countGoods: 0
+          cartItems: this.$root.$refs.head.$refs.cart.cartItems,
+          amount: this.$root.$refs.head.$refs.cart.amount,
       }
-    },
-    mounted(){
-        this.$parent.getJson(`/api/cart`)
-            .then(data => {
-                for (let item of data.contents){
-                    this.$data.cartItems.push(item);
-                }
-                this.$data.amount = data.amount;
-        //        this.$data.countGoods = data.countGoods;
-            });
-            
     },
     methods: {
         removeProduct(item){
