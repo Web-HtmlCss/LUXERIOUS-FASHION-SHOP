@@ -1,9 +1,11 @@
 Vue.component('products', {
-   data(){
+    props: ['count'],
+    data(){
        return {
            catalogUrl: '/catalogData.json',
            filtered: [],
            products: [],
+           forshow: [],
        }
    },
     mounted(){
@@ -12,6 +14,7 @@ Vue.component('products', {
                 for (let item of data){
                     this.$data.products.push(item);
                     this.$data.filtered.push(item);
+                    this.$data.forshow = this.$data.filtered.slice(0, +this.$props.count);
                 }
             });
     },
@@ -22,7 +25,7 @@ Vue.component('products', {
         }
     },
    template: `<div class="fetured-container">
-                <product v-for="item of filtered" 
+                <product v-for="item of forshow" 
                 :key="item.id_product" 
                 :product="item">
                 </product>
@@ -36,13 +39,13 @@ Vue.component('product', {
                     <img :src="product.img" alt="Some img">
                     <div class="hover-fog">
                         <button class="hover-fog-btn" @click="$root.$refs.head.$refs.cart.addProduct(product)">
-                            <img src="img/Vector.svg" alt="cart">
+                            <img src="/img/Vector.svg" alt="cart">
                             Add to Cart
                         </button>
                     </div>
                 </div>
                 <div class="fetured-txt">
-                    <a href="product/product.html">
+                    <a href="/product/product.html">
                         <div class="fetured-txt-title">
                             {{product.product_name}}
                         </div>

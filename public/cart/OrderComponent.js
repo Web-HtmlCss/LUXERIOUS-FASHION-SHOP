@@ -2,7 +2,6 @@ Vue.component('order', {
     data(){
       return {
           cartItems: this.$root.$refs.head.$refs.cart.cartItems,
-          amount: this.$root.$refs.head.$refs.cart.amount,
       }
     },
     methods: {
@@ -46,10 +45,10 @@ Vue.component('order', {
                 </div>
                 <div class="cartSecondPart__checkout b-checkout">
                     <div class="b-checkout__sub">
-                        SUB TOTAL <span class="b-checkout__subprice">$ {{amount}}</span>
+                        SUB TOTAL <span class="b-checkout__subprice">$ {{$root.$refs.head.$refs.cart.amount.toFixed(2)}}</span>
                     </div>
                     <div class="b-checkout__total">
-                        GRAND TOTAL <span class="b-checkout__totalprice red-txt">$ {{amount}}</span>
+                        GRAND TOTAL <span class="b-checkout__totalprice red-txt">$ {{$root.$refs.head.$refs.cart.amount.toFixed(2)}}</span>
                     </div>
                     <div class="b-checkout__separator"></div>
                     <button class="b-checkout__btn">PROCEED TO CHECKOUT</button>
