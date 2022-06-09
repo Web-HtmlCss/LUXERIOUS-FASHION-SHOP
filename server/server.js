@@ -22,6 +22,16 @@ app.get('/api/products', (req, res) => {
         }
     })
 });
+app.get('/api/product/:id', (req, res) => {
+    fs.readFile('server/db/products.json', 'utf-8', (err, data) => {
+        if(err){
+            res.sendStatus(404, JSON.stringify({result:0, text: err}));
+        } else {
+            let find = JSON.parse(data).find(el => el.id_product === +req.params.id);
+            res.send(JSON.stringify(find, null, 4));
+        }
+    })
+});
 
 
 const port = process.env.PORT || 3033;
