@@ -175,6 +175,9 @@
   background: white;
   cursor: pointer;
 }
+.b-collection__button:active {
+  background: lightgrey;
+}
 
 @media (min-width: 1140px) {
   .b-collection_centrize {

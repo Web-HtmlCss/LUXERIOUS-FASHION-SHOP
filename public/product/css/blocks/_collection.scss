@@ -71,6 +71,11 @@
         background: white;
         cursor: pointer;
     }
+    &__button:active {
+        background: #F26376;
+        color: white;
+      }
+
 }
 
 .b-collection_centrize {

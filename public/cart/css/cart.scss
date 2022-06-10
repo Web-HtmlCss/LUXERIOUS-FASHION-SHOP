@@ -63,6 +63,10 @@
         color: #575757;
         cursor: pointer;
     }
+    .cartFirstPart__button:active{
+        background: #F16D7F;
+        color: white;
+    }
     @media (max-width: 1140px) and (min-width: 768px) {
         margin-top: 62px;
         margin-bottom: 64px;

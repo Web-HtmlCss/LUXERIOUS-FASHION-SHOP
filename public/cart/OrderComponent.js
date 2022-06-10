@@ -1,36 +1,43 @@
 Vue.component('order', {
     data(){
       return {
-          cartItems: this.$root.$refs.head.$refs.cart.cartItems,
-      }
+        cart: this.$root.$refs.head.$refs.cart,
+    }
     },
     methods: {
         removeProduct(item){
-            let find = this.cartItems.find(el => el.id_product === item.id_product);
+            let find = this.cart.cartItems.find(el => el.id_product === item.id_product);
             this.$parent.deleteJson(`/api/cart/${ item.id_product }`)
             .then(data => {
                 if (data.result) {
-                    this.cartItems.splice(this.cartItems.indexOf(item), 1);
-                    this.countGoods--;
-                    this.amount -= (find.price * find.quantity);
+                    this.cart.cartItems.splice(this.cart.cartItems.indexOf(item), 1);
+                    this.cart.amount = +(this.cart.amount - find.price * find.quantity).toFixed(2);
+                    this.cart.countGoods--;
                 } else {
                     console.log('error');
                 }
             })
+        },
+        removeAll(){
+            for (let item of this.cart.cartItems){
+                this.removeProduct(item);
+            }
         },
     },
     template: `
         <main class="cartBody">
             <div class="cartFirstPart">
                 <div class="cartFirstPart__items">
-                    <order-item v-for="item of cartItems" 
+                    <order-item v-for="item of cart.cartItems" 
                     :key="item.id_product" 
                     :orderItem="item">
                     </order-item>
                 </div>
                 <div class="cartFirstPart__buttons">
-                    <button class="cartFirstPart__button">CLEAR SHOPPING CART</button>
-                    <button class="cartFirstPart__button">CONTINUE SHOPPING</button>
+                    <button class="cartFirstPart__button" @click="removeAll()">CLEAR SHOPPING CART</button>
+                    <a href="/catalog/catalog.html">
+                        <button class="cartFirstPart__button">CONTINUE SHOPPING</button>
+                    </a>
                 </div>
             </div>
             <div class="cartSecondPart">
@@ -45,10 +52,10 @@ Vue.component('order', {
                 </div>
                 <div class="cartSecondPart__checkout b-checkout">
                     <div class="b-checkout__sub">
-                        SUB TOTAL <span class="b-checkout__subprice">$ {{$root.$refs.head.$refs.cart.amount.toFixed(2)}}</span>
+                        SUB TOTAL <span class="b-checkout__subprice">$ {{cart.amount.toFixed(2)}}</span>
                     </div>
                     <div class="b-checkout__total">
-                        GRAND TOTAL <span class="b-checkout__totalprice red-txt">$ {{$root.$refs.head.$refs.cart.amount.toFixed(2)}}</span>
+                        GRAND TOTAL <span class="b-checkout__totalprice red-txt">$ {{cart.amount.toFixed(2)}}</span>
                     </div>
                     <div class="b-checkout__separator"></div>
                     <button class="b-checkout__btn">PROCEED TO CHECKOUT</button>
