@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Product</title>
+</head>
+<body>
+    <div id="app">
+        <headline ref="head"></headline>
+        <div class="wrapper">
+            <div class='product'>
+                <div class="menu-panel hidden">
+                <div class="close">
+                    <img src="../img/close.jpg" alt="Закрыть" class="close-img">
+                </div>
+                <div class="menu-title">MENU</div>
+                <nav class="menu-body">   
+                    <div class="menu-group">
+                        <div class="menu-head red-txt">
+                            MAN
+                        </div>
+                        <a href="">Accessories</a>
+                        <a href="">Bags</a>
+                        <a href="">Denim</a>
+                        <a href="">T-Shirts</a>
+                    </div>
+                    <div class="menu-group">
+                        <div class="menu-head red-txt">
+                            WOMAN
+                        </div>
+                        <a href="">Accessories</a>
+                        <a href="">Jackets & Coats</a>
+                        <a href="">Polos</a>
+                        <a href="">T-Shirts</a>
+                        <a href="">Shirts</a>
+                    </div>
+                    <div class="menu-group">
+                        <div class="menu-head red-txt">
+                            KIDS
+                        </div>
+                        <a href="">Accessories</a>
+                        <a href="">Jackets & Coats</a>
+                        <a href="">Polos</a>
+                        <a href="">T-Shirts</a>
+                        <a href="">Shirts</a>
+                        <a href="">Bags</a>
+                    </div>
+                </nav>
+                </div>
+                <div class="title">
+                    <div class="title_container">
+                        <p>NEW ARRIVALS</p>
+                        <nav>
+                            <a href="../index.html">HOME</a>
+                            <span>/</span>
+                            <a href="#">MEN</a>
+                            <span>/</span>
+                            <a href="#">NEW ARRIVALS </a>
+                        </nav>
+                    </div>
+                </div>
+                <main>
+              
+                    <good></good>
+                </main>
+                <div class="fetured fetured_margin fetured_size3-2">
+                    <products ref="products" count="3"></products>
+                </div>
+                <div class="servises">
+                    <div class="container">
+                        <div class="servise">
+                            <img src="../img/car.svg" alt="delivery">
+                            <div class="servise_title">
+                                Free Delivery
+                            </div>
+                            <div class="servise_txt">
+                                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                            </div>
+                        </div>
+                        <div class="servise">
+                            <img src="../img/percent.svg" alt="sale">
+                            <div class="servise_title">
+                                Sales & discounts
+                            </div>
+                            <div class="servise_txt">
+                                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                            </div>
+                        </div>
+                        <div class="servise">
+                            <img src="../img/king.svg" alt="luxe">
+                            <div class="servise_title">
+                                Quality assurance
+                            </div>
+                            <div class="servise_txt">
+                                Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <endline></endline>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="/js/CartComponent.js"></script>
+    <script src="/js/HeadLineComponent.js"></script>
+    <script src="/js/EndLineComponent.js"></script>
+    <script src="/js/ProductComponent.js"></script>
+    <script src="GoodComponent.js"></script>
+    <script src="/js/vueMain.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

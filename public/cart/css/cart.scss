@@ -1,0 +1,93 @@
+@import '../../css/style.css';
+@import '../../css/_title.scss';
+
+@import 'blocks/_cartItem.scss';
+@import 'blocks/_address.scss';
+@import 'blocks/_checkout.scss';
+
+.title_container{
+    @media (max-width: 600px) {
+        justify-content: center !important;
+    }
+}
+.cartBody {
+    @extend %baseBlock;
+    padding-top: 96px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .cartSecondPart__address {
+        margin-top: 17px;
+    }
+    .cartSecondPart__checkout {
+        margin-top: 57px;
+    }
+    @media (max-width: 1140px) and (min-width: 768px) {
+        padding-top: 59px;
+        flex-direction: column;
+        .cartFirstPart {
+            margin: 0 auto;
+            align-items: center;
+        }
+        .cartSecondPart {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    @media (max-width: 767px) {
+        padding-top: 39px;
+        padding-bottom: 96px;
+        flex-direction: column;
+        .cartFirstPart {
+            margin: 0 auto;
+        }
+        .cartSecondPart {
+            margin: 0 auto;
+            flex-direction: column;
+        }
+    }
+}
+
+.cartFirstPart__buttons {
+    width: 652px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 72px;
+    .cartFirstPart__button {
+        height: 50px;
+        padding: 0 40px;
+        background: #FFFFFF;
+        border: 1px solid #A4A4A4;
+        color: #575757;
+        cursor: pointer;
+    }
+    .cartFirstPart__button:active{
+        background: #F16D7F;
+        color: white;
+    }
+    @media (max-width: 1140px) and (min-width: 768px) {
+        margin-top: 62px;
+        margin-bottom: 64px;
+        width: 734px;
+        justify-content: center;
+        .cartFirstPart__button {
+            margin: 0 25px;
+        }
+    }
+    @media (max-width: 767px) {
+        justify-content: space-between;
+        width: 358px;
+        margin-top: 30px;
+        margin-bottom: 48px;
+        .cartFirstPart__button {
+            height: 33px;
+            width: 175px;
+            font-size: 12px;
+            padding: 0 0px;
+            text-transform: lowercase;
+            &:first-letter {text-transform: uppercase;}
+        }
+    }
+}

@@ -1,0 +1,46 @@
+%baseBlock {
+    max-width: 1140px;
+    margin: 0 auto;
+    @media (min-width: 768px) and (max-width: (1140px + 2 * 16)) {
+        margin: 0 16px;
+    }
+    @media (max-width: 767px) {
+        margin: 0 8px;
+    }
+}
+.title {
+    height: 148px;
+    background: #F8F3F4;
+    .title_container {
+        @extend %baseBlock;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+        p {
+            font-weight: normal;
+            font-size: 24px;
+            color: #F16D7F;
+        }
+        a, span {
+            text-decoration: none;
+            font-weight: 300;
+            font-size: 14px;
+            color: #636363;
+        }
+        a:last-child {
+            color: #F16D7F;
+            font-weight: 700;
+        }
+        span {
+            margin: 0 2px;
+        }
+        @media (max-width: 600px) {
+            flex-direction: column;
+            justify-content: initial;
+            p{
+                margin: 24px 0 32px;
+            }
+        }
+    }
+}

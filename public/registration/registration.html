@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Registration</title>
+</head>
+<body>
+    <div id="app">
+        <headline ref="head"></headline>
+        <div class="wrapper">
+            <div class='registration'>
+                <div class="menu-panel hidden">
+                    <div class="close">
+                        <img src="../img/close.jpg" alt="Закрыть" class="close-img">
+                    </div>
+                    <div class="menu-title">MENU</div>
+                    <nav class="menu-body">   
+                        <div class="menu-group">
+                            <div class="menu-head red-txt">
+                                MAN
+                            </div>
+                            <a href="">Accessories</a>
+                            <a href="">Bags</a>
+                            <a href="">Denim</a>
+                            <a href="">T-Shirts</a>
+                        </div>
+                        <div class="menu-group">
+                            <div class="menu-head red-txt">
+                                WOMAN
+                            </div>
+                            <a href="">Accessories</a>
+                            <a href="">Jackets & Coats</a>
+                            <a href="">Polos</a>
+                            <a href="">T-Shirts</a>
+                            <a href="">Shirts</a>
+                        </div>
+                        <div class="menu-group">
+                            <div class="menu-head red-txt">
+                                KIDS
+                            </div>
+                            <a href="">Accessories</a>
+                            <a href="">Jackets & Coats</a>
+                            <a href="">Polos</a>
+                            <a href="">T-Shirts</a>
+                            <a href="">Shirts</a>
+                            <a href="">Bags</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="title">
+                    <div class="title_container">
+                        <p>REGISTRATION</p>
+                    </div>
+                </div>
+                <main class="regPage">
+                    <div class="regPage__person b-person">
+                        <div class="b-person__name">
+                            Your Name
+                            <input type="text" class="b-person__firstName" name="firstName" placeholder="First Name">
+                            <input type="text" class="b-person__lastName" name="lastName" placeholder="Last Name">
+                            <div class="b-person__gender">
+                                <input type="radio" class="b-person__genderItem" name="gender" value="male" id="male">
+                                <label for="male" class="b-person__genderLabel">Male</label>
+                                <input type="radio" class="b-person__genderItem" name="gender" value="female" id="female">
+                                <label for="female" class="b-person__genderLabel">Female</label>
+                                <input type="radio" class="b-person__genderItem" name="gender" value="other" id="other">
+                                <label for="other" class="b-person__genderLabel">Other</label>
+                            </div>
+                        </div>
+                        <div class="b-person__login">
+                            Login details
+                            <input type="text" class="b-person__email" name="email" placeholder="Email">
+                            <input type="text" class="b-person__password" name="password" placeholder="Password">
+                            <div class="b-person__hint">
+                                Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+                            </div>
+                        </div>
+                        <button  class="b-person__btn">
+                            JOIN NOW 
+                            <img src="img/join.png" alt="join">
+                        </button>
+                    </div>
+                    <div class="regPage__loyality b-loyality">
+                        <div class="b-loyality__title">
+                            LOYALTY HAS ITS PERKS
+                        </div>
+                        <div class="b-loyality__description">
+                            Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+                        </div>
+                        <ul class="b-loyality__items">
+                            <li class="b-loyality_item">15% off welcome offer</li>
+                            <li class="b-loyality_item">Free shipping, returns and exchanges on all orders</li>
+                            <li class="b-loyality_item">$10 off a purchase on your birthday</li>
+                            <li class="b-loyality_item">Early access to products</li>
+                            <li class="b-loyality_item">Exclusive offers & rewards</li>
+                        </ul>
+                    </div>
+                </main>
+           </div>
+        </div>
+        <endline></endline>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="/js/CartComponent.js"></script>
+    <script src="/js/HeadLineComponent.js"></script>
+    <script src="/js/EndLineComponent.js"></script>
+    <script src="/js/vueMain.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+@import 'style.css';
+@import 'ie.css';
+@import 'fetured.css';
+
+.brand {
+    display: flex;
+    background-color: #F1E4E6;
+    position: relative;
+}
+.left-brand,
+.right-brand {
+    width: 50%;
+}
+.left-brand img {
+    display: block;
+    width: 100%;
+}
+.right-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+}
+.brand-txt {
+    padding-left: 15px;
+    border-left: 12px solid #F16D7F;
+    font-weight: 700;
+    font-size: 32px;
+}
+.brand-top {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+@media (max-width: 767px) {
+    .left-brand { display: none; }
+    .right-brand {
+        width: 100%;
+        min-height: 363px;
+    }
+    .brand-txt {
+        font-size: 20px;
+    }
+    .brand-top {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1599px) {
+    .brand-txt {
+        font-size: 24px;
+    }
+    .brand-top {
+        font-size: 44px;
+    }
+}
+
+@media (min-width: 1600px){
+    .brand-txt {
+        margin-right: 200px;
+        margin-bottom: 85px;
+    }
+}
+
+.menu-panel {
+    height: 100%;
+}
+
+.offers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 260px 180px;
+    gap: 30px;
+    padding: 65px 16px 96px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.offer-accesories {
+    grid-column: 1/-1;
+}
+.offer {
+    position: relative;
+}
+.offer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.offer-accesories img {
+    height: 180px;
+}
+
+@media (max-width: 767px) {
+    .offers {
+        grid-template-columns: 1fr;
+        grid-template-rows: 247px 247px 247px 111px;
+        gap: 32px;
+        /*дефект макета: отступ 16px->8px*/
+        padding: 64px 8px;
+    }
+    .offer-accesories img {
+        height: 111px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1140px) {
+    .offers {
+        grid-template-rows: 167px 116px;
+        padding: 20px 16px 154px;
+        gap: 20px;
+    }
+    .offer-accesories img {
+        height: 116px;
+    }
+}
+
+.offer-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+}
+.offer-txt-bottom {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}

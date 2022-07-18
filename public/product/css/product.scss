@@ -1,0 +1,32 @@
+@import '../../css/style.css';
+@import '../../css/fetured.css';
+@import '../../css/_title.scss';
+
+@import 'blocks/_slider.scss';
+@import 'blocks/_collection.scss';
+
+
+.fetured_margin {
+    margin-top: 128px;
+    margin-bottom: 128px;
+    @media (max-width: 767px) {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+    @media (min-width: 1140px) {
+        margin-top: 64px;
+    }
+}
+
+.fetured_size3-2 {
+    @media (min-width: 768px) and (max-width: 1140px) {
+        .fetured-block:nth-child(3){
+            display: none;
+        }
+    }
+    @media (max-width: 767px) {
+        .fetured-block:nth-child(2){
+            display: none;
+        }
+    }
+}
