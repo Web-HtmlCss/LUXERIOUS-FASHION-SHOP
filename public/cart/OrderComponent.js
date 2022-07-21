@@ -77,7 +77,9 @@ Vue.component('order', {
 Vue.component('order-item', {
     props: ['orderItem'],
     template: `<div class="cartFirstPart__item b-cartItem b-cartItem_shadow">
-                   <img class="b-cartItem__img" :src="orderItem.img" alt="1">
+                   <a :href="'/product/product.html?id=' + orderItem.id_product">
+                        <img class="b-cartItem__img" :src="orderItem.img" alt="1">
+                   </a>
                    <div class="b-cartItem__descr">
                        <div class="b-cartItem__title">
                            {{ orderItem.product_name }}
