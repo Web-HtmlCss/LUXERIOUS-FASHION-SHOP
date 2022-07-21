@@ -17,9 +17,16 @@ let remove = (cart, req) => {
     cart.contents.splice( cart.contents.indexOf(find), 1);
     return JSON.stringify(cart, null, 4);
 };
+let clear = (cart, req) => {
+    cart.contents = [];
+    cart.countGoods = 0;
+    cart.amount = 0;
+    return JSON.stringify(cart, null, 4);
+};
 
 module.exports = {
     add,
     change,
-    remove
+    remove,
+    clear
 };

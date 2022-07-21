@@ -19,9 +19,16 @@ Vue.component('order', {
             })
         },
         removeAll(){
-            for (let item of this.cart.cartItems){
-                this.removeProduct(item);
-            }
+            this.$parent.deleteJson(`/api/cart`)
+            .then(data => {
+                if (data.result) {
+                    this.cart.cartItems = [];
+                    this.cart.amount = 0;
+                    this.cart.countGoods = 0;
+                } else {
+                    console.log('error');
+                }
+            })
         },
     },
     template: `
